@@ -1,6 +1,19 @@
 # better-digital-ocean-datacenter
 Calculates average ping metric for different digitalocean's datacenters
 
+## How to use
+
+Add execution permissions:
+
+`chmod +x test-datacenter.sh`
+
+Signature: `./test-datacenter.sh <ping_total> <file_with_datacenters>`
+
+Example:
+
+`./test-datacenter.sh 5 datacenters.txt`
+
+
 ## License
 
 The MIT License (MIT)
