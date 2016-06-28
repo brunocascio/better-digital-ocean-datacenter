@@ -1,0 +1,8 @@
+speedtest-lon1.digitalocean.com
+speedtest-sfo1.digitalocean.com
+speedtest-ams1.digitalocean.com
+speedtest-ams2.digitalocean.com
+speedtest-nyc1.digitalocean.com
+speedtest-nyc2.digitalocean.com
+speedtest-nyc3.digitalocean.com
+speedtest-sgp1.digitalocean.com
