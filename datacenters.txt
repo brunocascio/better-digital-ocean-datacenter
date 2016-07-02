@@ -2,7 +2,11 @@ speedtest-lon1.digitalocean.com
 speedtest-sfo1.digitalocean.com
 speedtest-ams1.digitalocean.com
 speedtest-ams2.digitalocean.com
+speedtest-ams3.digitalocean.com
 speedtest-nyc1.digitalocean.com
 speedtest-nyc2.digitalocean.com
 speedtest-nyc3.digitalocean.com
 speedtest-sgp1.digitalocean.com
+speedtest-fra1.digitalocean.com
+speedtest-tor1.digitalocean.com
+speedtest-blr1.digitalocean.com
