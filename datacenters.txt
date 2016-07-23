@@ -1,5 +1,6 @@
 speedtest-lon1.digitalocean.com
 speedtest-sfo1.digitalocean.com
+speedtest-sfo2.digitalocean.com
 speedtest-ams1.digitalocean.com
 speedtest-ams2.digitalocean.com
 speedtest-ams3.digitalocean.com
