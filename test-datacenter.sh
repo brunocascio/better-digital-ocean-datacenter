@@ -11,7 +11,7 @@ max_ping=$1
 while read -r line;
 do
 	echo -n "Ping ${bold}${line}${normal}: "
-	ping_avg=`ping -c $1 $line | tail -n1 | cut -d'=' -f2 | cut -d'/' -f2`
+	ping_avg=`ping -c $max_ping $line | tail -n1 | cut -d'=' -f2 | cut -d'/' -f2`
 	echo "$ping_avg ms"
 	if [ $(echo "$ping_avg < $better_ping" | bc) -eq 1 ];
 	then
