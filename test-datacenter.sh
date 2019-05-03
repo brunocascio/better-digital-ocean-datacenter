@@ -11,6 +11,11 @@ max_ping=$1
 while read -r line;
 do
 	ping_avg=`ping -c $max_ping $line | tail -n1 | cut -d'=' -f2 | cut -d'/' -f2`
+	if [ -z "$ping_avg" ]
+	then
+		echo "Ping ${bold}${line}${normal}: not available"
+		continue
+	fi
 	echo "Ping ${bold}${line}${normal}: $ping_avg ms"
 	if [ $(echo "$ping_avg < $better_ping" | bc) -eq 1 ];
 	then
