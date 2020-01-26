@@ -9,6 +9,8 @@ Add execution permissions:
 
 Signature: `./test-datacenter.sh <ping_total> <file_with_datacenters>`
 
+`ping_total` stands for the amount of ping tests the script does to determine the average latency.
+
 Example:
 
 `./test-datacenter.sh 5 datacenters.txt`
