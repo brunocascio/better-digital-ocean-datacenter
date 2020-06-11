@@ -8,6 +8,20 @@ better_datacenter=''
 better_datacenter_name=''
 max_ping=$1
 
+datacenters="speedtest-lon1.digitalocean.com
+			speedtest-sfo1.digitalocean.com
+			speedtest-sfo2.digitalocean.com
+			speedtest-sfo3.digitalocean.com
+			speedtest-ams2.digitalocean.com
+			speedtest-ams3.digitalocean.com
+			speedtest-nyc1.digitalocean.com
+			speedtest-nyc2.digitalocean.com
+			speedtest-nyc3.digitalocean.com
+			speedtest-sgp1.digitalocean.com
+			speedtest-fra1.digitalocean.com
+			speedtest-tor1.digitalocean.com
+			speedtest-blr1.digitalocean.com"
+
 while read -r line;
 do
 	ping_avg=`ping -c $max_ping $line | tail -n1 | cut -d'=' -f2 | cut -d'/' -f2`
@@ -23,7 +37,7 @@ do
 		better_datacenter=$line
 		better_datacenter_name=`echo $line | cut -d'.' -f1 | cut -d'-' -f2`
 	fi
-done < "$2"
+done <<< "$datacenters"
 
 echo ""
 echo "${bold}---------------------- Better Datacenter is -----------------------------------${normal}"

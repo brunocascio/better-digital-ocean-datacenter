@@ -3,18 +3,13 @@ Calculates average ping metric for different digitalocean's datacenters
 
 ## How to use
 
-Add execution permissions:
+```curl
+curl -s https://raw.githubusercontent.com/brunocascio/better-digital-ocean-datacenter/master/test-datacenter.sh | sh -s <ping_amount>
+```
 
-`chmod +x test-datacenter.sh`
+### Arguments
 
-Signature: `./test-datacenter.sh <ping_total> <file_with_datacenters>`
-
-`ping_total` stands for the amount of ping tests the script does to determine the average latency.
-
-Example:
-
-`./test-datacenter.sh 5 datacenters.txt`
-
+`<ping_count>`: Amount of ping requests performed (default = 1)
 
 ## License
 
