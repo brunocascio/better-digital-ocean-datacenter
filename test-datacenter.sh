@@ -6,7 +6,7 @@ normal=$(tput sgr0)
 better_ping=99999
 better_datacenter=''
 better_datacenter_name=''
-max_ping=$1
+max_ping=${1:-1}
 
 datacenters="speedtest-lon1.digitalocean.com
 			speedtest-sfo1.digitalocean.com
